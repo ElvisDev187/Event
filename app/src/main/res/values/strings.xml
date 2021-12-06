@@ -1,0 +1,50 @@
+<resources>
+
+    <string name="app_name">Event</string>
+    <!--I-PAGE INSCRIPTION-->
+    <!--etape 1-->
+    <string name="register_btn_begin">S\'inscrire</string>
+    <string name="register_link_login">Avez vous déja un compte?/connexion</string>
+    <!--etape 2-->
+    <string name="register_btn_next">Suivant</string>
+    <string name="register_edit_user_name">Nom d\'utilisateur</string>
+    <string name="register_edit_user_mail">Adresse mail</string>
+    <string name="register_edit_user_pwd">Mot de passe</string>
+    <string name="register_edit_user_confirm_pwd">Confirmer le mot de passe</string>
+    <!--etape 3-->
+    <string name="register_lb_code">Code</string>
+    <string name="register_btn_resend_code">Renvoyer le code</string>
+    <string name="register_btn_submit">Valider</string>
+
+    <!--II-PAGE PROFIL UTILISATEUR-->
+    <string name="user_page_lb_title">Profil</string>
+    <string name="user_page_lb_name">@string/register_edit_user_name</string>
+    <string name="user_page_lb_mail">@string/register_edit_user_mail</string>
+    <string-array name="user_page_spinner_location">
+        <item>Ville : Douala</item>
+        <item>Ville : Yaoundé</item>
+        <item>Ville : Baffoussam</item>
+        <item>Ville : Ngaoundéré</item>
+        <item>Ville : Douala</item>
+    </string-array>
+    <string name="user_page_btn_change_pwd">Changer le mot de passe</string>
+    <string name="user_page_btn_cancel">ANNULER</string>
+    <string name="user_page_btn_save">SAUVEGARDER</string>
+    <string name="user_page_edit_old_pwd">Ancien mot de passe</string>
+    <string name="user_page_edit_new_pwd">Nouveau mot de passe</string>
+    <!--III-PAGE  -->
+    <string name="home_page_title">Acceuil</string>
+    <string name="home_page_search">Rechercher un évennement</string>
+    <!--III-PAGE_popup -->
+    <string name="popup_page_lb_notice">
+
+    </string>
+    <string-array name="popup_page_spinner_alarm">
+        <item>Une journée</item>
+        <item>Une heure</item>
+        <item>Deux heures</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firstIp">5</string>
+</resources>
