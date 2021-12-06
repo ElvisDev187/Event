@@ -17,7 +17,7 @@ class RegisterEditFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater?.inflate(R.layout.fragment_register_edit, container, false)
+        val view = inflater.inflate(R.layout.fragment_register_edit, container, false)
         val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
         val btn = view.findViewById<Button>(R.id.next)
         btn.setOnClickListener{

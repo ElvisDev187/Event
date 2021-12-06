@@ -7,14 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".fragments.RegisterValidFragment">
 
+
     <TextView
         android:id="@+id/textView"
         style="@style/TitleTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="120dp"
         android:text="@string/register_lb_code"
+        android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,30 +26,134 @@
         android:layout_height="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.335"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.349"
+        tools:layout_editor_absoluteX="46dp" />
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_input_layout_for_username"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="50dp"
-        android:layout_height="61dp"
-        app:hintTextAppearance="@color/black"
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view">
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.144" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_username"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:maxLength="21"
-            android:text="5"
-            android:textSize="20sp" />
-    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/nbone"
+        style="@style/EditTextStyle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginStart="32dp"
+        android:maxLength="1"
+        android:ems="10"
+        android:inputType="number"
+        android:text="5"
+        android:textSize="25sp"
+        android:gravity="center|bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/nbtwo"
+        style="@style/EditTextStyle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginStart="12dp"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text="5"
+        android:textSize="25sp"
+        android:gravity="center|bottom"
+        android:ems="10"
+        app:layout_constraintStart_toEndOf="@+id/nbone"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:autofillHints="creditCardNumber" />
+
+    <EditText
+        android:id="@+id/nbthree"
+        android:layout_width="56dp"
+        android:background="@drawable/custom_input"
+        style="@style/EditTextStyle"
+        android:layout_height="56dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:maxLength="1"
+        android:inputType="number"
+        android:text="5"
+        android:textSize="25sp"
+        android:gravity="center|bottom"
+        app:layout_constraintStart_toEndOf="@+id/nbtwo"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/nbfour"
+        style="@style/EditTextStyle"
+        android:background="@drawable/custom_input"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="12dp"
+        android:maxLength="1"
+        android:ems="10"
+        android:inputType="number"
+        android:text="5"
+        android:textSize="25sp"
+        android:gravity="center|bottom"
+        app:layout_constraintStart_toEndOf="@+id/nbthree"
+        app:layout_constraintTop_toTopOf="@+id/nbthree" />
+
+    <EditText
+        android:id="@+id/nbfive"
+        android:background="@drawable/custom_input"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="12dp"
+        style="@style/EditTextStyle"
+        android:ems="10"
+        android:inputType="number"
+        android:text="5"
+        android:maxLength="1"
+        android:textSize="25sp"
+        android:gravity="center|bottom"
+        app:layout_constraintStart_toEndOf="@+id/nbfour"
+        app:layout_constraintTop_toTopOf="@+id/nbfour" />
+
+    <Button
+
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/principalBlue"
+        android:fontFamily="@font/seguisb"
+        android:text="@string/register_btn_submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Button
+
+        android:id="@+id/btn_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/principalBlue"
+        android:fontFamily="@font/seguisb"
+        android:text="@string/register_btn_resend_code"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
