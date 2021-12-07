@@ -48,14 +48,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backgroung_top_bar"
         app:startIconDrawable="@drawable/ic_search"
-
         app:startIconTint="@color/principalBlue">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_search"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:inputType="text"
             android:maxLength="21" />
     </com.google.android.material.textfield.TextInputLayout>

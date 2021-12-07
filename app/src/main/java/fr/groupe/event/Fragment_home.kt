@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import fr.groupe.event.Adapter.EventAdapter
+import fr.groupe.event.Adapter.CityAdapter
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,11 +28,7 @@ class Fragment_home : Fragment() {
         // Inflate the layout for this fragment
          val view=inflater.inflate(R.layout.fragment_home, container, false)
         val ville_items= view.findViewById<RecyclerView>(R.id.first_container)
-        val ville=fragment_ville()
-        ville_items.adapter=EventAdapter(R.layout.fragment_ville_fragment)
-        fragment_ville()
-
-
+        ville_items.adapter=CityAdapter()
 
         return view
     }
