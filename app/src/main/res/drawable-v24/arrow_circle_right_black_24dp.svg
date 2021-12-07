@@ -1,0 +1,15 @@
+<svg id="arrow_circle_right_black_24dp" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Groupe_1">
+    <rect id="Rectangle_2"
+        width="45" height="45" fill="none"/>
+  </g>
+  <g id="Groupe_3"
+      transform="translate(2 2)">
+    <g id="Groupe_2">
+      <path id="Tracé_12"
+          d="M4,22.5A18.5,18.5,0,1,1,22.5,41,18.525,18.525,0,0,1,4,22.5m18.5-2.312H13.25v4.625H22.5V31.75l9.25-9.25L22.5,13.25Z" transform="translate(-2 -2)" fill="#359eea" opacity="0.3"/>
+      <path id="Tracé_13"
+          d="M6.1,22.5A16.4,16.4,0,1,1,22.5,38.9,16.422,16.422,0,0,1,6.1,22.5M2,22.5A20.5,20.5,0,1,0,22.5,2,20.507,20.507,0,0,0,2,22.5Zm20.5-2.05H14.3v4.1h8.2V30.7l8.2-8.2-8.2-8.2Z" transform="translate(-2 -2)" fill="#359eea"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_for_username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/register_edit_user_name"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343"
+        app:startIconDrawable="@drawable/ic_account"
+        app:startIconTint="@color/principalBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:maxLength="21" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_for_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/register_edit_user_mail"
+        app:endIconMode="clear_text"
+
+
+        app:layout_constraintStart_toStartOf="@+id/text_input_layout_for_username"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_for_username"
+        app:startIconDrawable="@drawable/ic_mail"
+        app:startIconTint="@color/principalBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_mail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_for_pwd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/register_edit_user_pwd"
+        app:endIconMode="password_toggle"
+
+
+        app:layout_constraintStart_toStartOf="@+id/text_input_layout_for_email"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_for_email"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="@color/principalBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_for_conf_pwd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/register_edit_user_confirm_pwd"
+        app:endIconMode="password_toggle"
+        app:helperText="Tous les champs sont requis *"
+        app:helperTextTextColor="@color/purple_200"
+
+
+        app:layout_constraintStart_toStartOf="@+id/text_input_layout_for_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_for_pwd"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="@color/principalBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_conf_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_for_conf_pwd">
+
+        <Button
+
+            android:id="@+id/next"
+            android:layout_width="207dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/principalBlue"
+            android:text="@string/register_btn_next"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

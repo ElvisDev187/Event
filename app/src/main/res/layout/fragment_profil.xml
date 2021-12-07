@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/backgroung_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_name"
+        style="@style/App"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DefaultMargin"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroung_top_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_title"
+        style="@style/PageTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_page_lb_title"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroung_top_bar"
+        app:layout_constraintStart_toStartOf="@+id/app_name" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="154dp"
+        android:layout_height="153dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="@color/smoothBlue"
+        app:cardCornerRadius="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pp" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profil_card_button_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="277dp"
+        android:layout_marginLeft="152dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/profil_button_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_picture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/DefaultMargin"
+        android:layout_marginTop="351dp"
+        android:src="@drawable/ic_profil_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/simpleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="355dp"
+        android:text="@string/register_edit_user_name"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/profil_button_edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="342dp"
+        android:layout_marginTop="355dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/profil_edit_name"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:text="Johnathan Writh"
+        style="@style/SubtitleTextStyle"
+
+
+        android:focusable="false"
+
+
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/profil_button_button_cancel_name"
+        style="@style/DateHorizontalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANNULER"
+
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profil_edit_name" />
+
+    <TextView
+        android:id="@+id/profil_button_button_save_name"
+        style="@style/DateHorizontalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAUVEGARDER"
+
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profil_button_button_cancel_name"
+        app:layout_constraintTop_toBottomOf="@+id/profil_edit_name" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/DefaultMargin"
+        android:layout_marginTop="451dp"
+        android:src="@drawable/ic_profil_mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/simpleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="455dp"
+        android:text="@string/register_edit_user_mail"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/profil_button_edit_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="342dp"
+        android:layout_marginTop="455dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/profil_edit_mail"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+
+
+        android:focusable="false"
+
+
+        android:text="johnathanwrith@gmail.com"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/profil_button_button_cancel_mail"
+        style="@style/DateHorizontalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANNULER"
+
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profil_edit_mail" />
+
+    <TextView
+        android:id="@+id/profil_button_button_save_mail"
+        style="@style/DateHorizontalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAUVEGARDER"
+
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profil_button_button_cancel_mail"
+        app:layout_constraintTop_toBottomOf="@+id/profil_edit_mail" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/DefaultMargin"
+        android:layout_marginTop="551dp"
+        android:src="@drawable/ic_pwd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/next"
+        android:layout_width="233dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="545dp"
+        android:layout_marginLeft="79dp"
+
+
+        android:visibility="visible"
+
+
+        android:layout_gravity="center"
+        android:backgroundTint="@color/principalBlue"
+        android:text="@string/user_page_btn_change_pwd"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profil_text_input_layout_for_old_pwd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+
+        android:visibility="invisible"
+
+
+        android:hint="@string/user_page_edit_old_pwd"
+        app:endIconMode="password_toggle"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/profil_button_button_cancel_mail"
+        app:startIconTint="@color/principalBlue"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profil_edit_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profil_text_input_layout_for_new_pwd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_page_edit_new_pwd"
+        app:endIconMode="password_toggle"
+
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintStart_toStartOf="@+id/profil_text_input_layout_for_old_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/profil_text_input_layout_for_old_pwd"
+        app:startIconTint="@color/principalBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profil_edit_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/profil_button_button_cancel_pwd"
+        style="@style/DateHorizontalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANNULER"
+
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profil_text_input_layout_for_new_pwd" />
+
+    <TextView
+        android:id="@+id/profil_button_button_save_pwd"
+        style="@style/DateHorizontalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAUVEGARDER"
+
+
+        android:visibility="invisible"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profil_button_button_cancel_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/profil_text_input_layout_for_new_pwd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
