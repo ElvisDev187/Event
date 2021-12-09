@@ -23,7 +23,7 @@ class ViewPagerFragment : Fragment() {
         val fragmentList = arrayListOf(
             RegisterBeginFragment(),
             RegisterEditFragment(),
-            RegisterValidFragment()
+
         )
 
         val adapter = ViewPagerAdapter(
