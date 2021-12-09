@@ -9,10 +9,15 @@ import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import fr.groupe.event.R
 import fr.groupe.event.RegisterAndLoginActivity
 
 class RegisterBeginFragment : Fragment() {
+
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
 
@@ -33,5 +38,7 @@ class RegisterBeginFragment : Fragment() {
 
 
     }
+
+
 
 }

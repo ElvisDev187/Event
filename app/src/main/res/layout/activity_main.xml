@@ -7,13 +7,63 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/backgroung_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
+        android:id="@+id/app_name"
+        style="@style/App"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="@dimen/DefaultMargin"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroung_top_bar"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_title"
+        style="@style/PageTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_page_title"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroung_top_bar"
+        app:layout_constraintStart_toStartOf="@+id/app_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:hint="@string/home_page_search"
+        app:counterEnabled="false"
+        app:endIconMode="clear_text"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroung_top_bar"
+        app:startIconDrawable="@drawable/ic_search"
+        app:startIconTint="@color/principalBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:maxLength="21" />
+    </com.google.android.material.textfield.TextInputLayout>
+   <FrameLayout
+       android:id="@+id/container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="230dp"
+       />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

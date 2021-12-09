@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_link_register">Vous n\'avez pas compte?</string>
+    <string name="login_text">Connexion</string>
+    <string name="login_greating">Bon retour</string>
+</resources>

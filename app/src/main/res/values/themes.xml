@@ -37,7 +37,12 @@
 
     <style name="DateHorizontalTextStyle" parent="TitleTextStyle">
         <item name="android:textColor">@color/liteBlue</item>
-        <item name="android:textSize">12dp</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+    <style name="EventNameTextStyle" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:fontFamily">@font/poppinsbold</item>
     </style>
 
     <style name="EditTextStyle">
@@ -56,9 +61,13 @@
         <item name="android:textSize">25dp</item>
         <item name="android:textColor">@color/white</item>
     </style>
-    <style name="link" parent="App">
+    <style name="simpleText">
+        <item name="android:fontFamily">@font/segoe_uibold</item>
         <item name="android:textSize">15dp</item>
-        <item name="android:textColor">@color/principalBlue</item>
+        <item name="android:textColor">@color/textGrey</item>
     </style>
-
+<style name="link" parent="App">
+    <item name="android:textSize">15sp</item>
+    <item name="android:textColor">@color/principalBlue</item>
+</style>
 </resources>

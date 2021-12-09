@@ -5,8 +5,6 @@
     <!--etape 1-->
     <string name="register_btn_begin">S\'inscrire</string>
     <string name="register_link_login">Avez vous déja un compte?</string>
-    <string name="login_link_register">Vous n\'avez pas de compte?</string>
-    <string name="login_text">Connexion</string>
     <!--etape 2-->
     <string name="register_btn_next">Suivant</string>
     <string name="register_edit_user_name">Nom d\'utilisateur</string>
@@ -49,5 +47,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="firstIp">5</string>
+    <string name="login_link_register">Vous n\'avez pas compte?</string>
+    <string name="login_text">Connexion</string>
     <string name="login_greating">Bon retour</string>
 </resources>

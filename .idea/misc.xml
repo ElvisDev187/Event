@@ -23,6 +23,17 @@
         <entry key="..\:/Users/cabrel/AndroidStudioProjects/Event/app/src/main/res/layout/fragment_register_valid.xml" value="0.22" />
         <entry key="..\:/Users/cabrel/AndroidStudioProjects/Event/app/src/main/res/layout/fragment_splash.xml" value="0.1796875" />
         <entry key="..\:/Users/cabrel/AndroidStudioProjects/Event/app/src/main/res/layout/fragment_view_pager.xml" value="0.1796875" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/drawable/ic_edit.xml" value="0.1" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/activity_register_and_login.xml" value="0.1796875" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/event_item.xml" value="0.12" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/fragment_login.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/fragment_profil.xml" value="0.1796875" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/fragment_register_begin.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/fragment_register_edit.xml" value="0.1796875" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/fragment_view_pager.xml" value="0.1796875" />
+        <entry key="..\:/Users/cabrel/AndroidStudioProjects/EventTest/app/src/main/res/layout/fragment_ville.xml" value="0.1796875" />
       </map>
     </option>
   </component>
